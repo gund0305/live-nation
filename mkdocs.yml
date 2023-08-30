@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: Live Nation
+nav:
+  - Home: index.md
+  - Documentation: documentation.md
+  - About: about.md
+theme:
+  name: material
+markdown_extensions:
+  - admonition
