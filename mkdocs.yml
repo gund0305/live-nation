@@ -5,5 +5,7 @@ nav:
   - About: about.md
 theme:
   name: material
+  palette:
+    primary: red
 markdown_extensions:
   - admonition
