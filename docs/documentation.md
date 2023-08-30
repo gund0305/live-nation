@@ -56,15 +56,15 @@ For full documentation visit [databricks.com/what-is-structured-streaming](https
                         from
                             stream_source_table
 !!! note
-The following parameter values are required but can be left empty:  
-`update_condition`  
-`delete_condition`  
-`insert_condition`
+    The following parameter values are required but can be left empty:  
+    `update_condition`  
+    `delete_condition`  
+    `insert_condition`
 !!! note
-The following parameter values are optional but cannot be left empty:  
-`exlude_cols`  
-`merge_sql`  
-`partition_columns`
+    The following parameter values are optional but cannot be left empty:  
+    `exlude_cols`  
+    `merge_sql`  
+    `partition_columns`
 ## Schedule
 For lenient latency requirements use the optional **trigger** parameter and set the expression `once: true`. The trigger option is situated in the environment to allow non-prod work streams to be scheduled intraday for cost saving.
 
@@ -98,11 +98,11 @@ For lenient latency requirements use the optional **trigger** parameter and set 
                         from
                             default.discovery_genre
 !!! note
-1. `update_ts` column will be used for deduping
-2. The sql statement should use/reference the temporary table `stream_source_table`
-3. Parameter values for `update_condition`, `delete_condition`, `insert_condition` should use alias target source to create the filter `expression: target`. Example:  
-`<column_name><any_comparision_operators><source_column_name> | <literal value>`
-4. Use full publish support for once a day whole table refresh requirement
+    1. `update_ts` column will be used for deduping
+    2. The sql statement should use/reference the temporary table `stream_source_table`
+    3. Parameter values for `update_condition`, `delete_condition`, `insert_condition` should use alias target source to create the filter `expression: target`. Example:  
+    `<column_name><any_comparision_operators><source_column_name> | <literal value>`
+    4. Use full publish support for once a day whole table refresh requirement
 
 ## Service Configuration
 1. Clone to you home folder the development/testing notebook: `workspace/cds_nonprod/stream_snowflake_from_Delta_Develop`
