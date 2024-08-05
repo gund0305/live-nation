@@ -11,7 +11,7 @@ This site contains the documentation for [Publishing to snowflake from delta - s
       title="PizzaBot"
       width="350"
       height="430"
-      src="https://console.dialogflow.com/api-client/demo/embedded/a87cdc8f-5b4d-4b09-9a31-eccda9403a76">
+      src="https://console.dialogflow.com/api-client/demo/embedded/a87cdc8f-5b4d-4b09-9a31-eccda9403a76" 
   </iframe>
 
 ### Purpose
